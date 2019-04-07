@@ -2,7 +2,13 @@
 name = "loosen"
 version = "0.1.0"
 authors = ["Thiago <swfsql@gmail.com>"]
+license = "MIT"
+description = "Derives a wrapper function which loosen the arguments into a tuple."
+repository = "https://github.com/swfsql/loosen"
+keywords = ["tuple", "argument", "flatten", "loose"]
+readme = "README.md"
 edition = "2018"
+# documentation = "https://docs.rs/loosen/0.1.0/loosen/"
 
 [lib]
 proc-macro = true
