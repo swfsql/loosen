@@ -39,11 +39,10 @@
 /// I suggested this as an rfc before realising a proc macro would suffice:
 /// https://github.com/rust-lang/rfcs/issues/2667
 extern crate proc_macro;
-extern crate syn;
-#[macro_use]
-extern crate quote;
+use syn;
 
 use proc_macro::TokenStream;
+use quote::quote;
 
 /// For a function `fa(A, B)`,
 /// derives `fa_loose((A, B,))` which calls fa(A, B).

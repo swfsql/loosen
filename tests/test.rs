@@ -1,6 +1,5 @@
 //! some dummy tests
 
-extern crate loosen;
 use loosen::loose;
 
 pub struct A;

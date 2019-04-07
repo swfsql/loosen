@@ -2,13 +2,12 @@
 name = "loosen"
 version = "0.1.0"
 authors = ["Thiago <swfsql@gmail.com>"]
-# edition = "2018"
+edition = "2018"
 
 [lib]
 proc-macro = true
 
 [dependencies]
-# syn = { version = "0.15.30" } 
 syn = { version = "0.15.30", features = ["full"] } 
 quote = "0.6.11"
 
