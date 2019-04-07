@@ -8,7 +8,7 @@ repository = "https://github.com/swfsql/loosen"
 keywords = ["tuple", "argument", "flatten", "loose"]
 readme = "README.md"
 edition = "2018"
-# documentation = "https://docs.rs/loosen/0.1.0/loosen/"
+documentation = "https://docs.rs/loosen/0.1.0/loosen/"
 
 [lib]
 proc-macro = true

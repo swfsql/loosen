@@ -7,17 +7,19 @@ Upon call, the loosened function propagates the call with the flattened input tu
 ## Example
 
 ```
-// 'derives' a `fa_loose` wrapper-like function
 #[loose] 
 fn fa(a: A, b: B) {}
 
-fa(A, B); // normal call
+// normal call
+fa(A, B); 
 
+// loose call
 let args = (A, B);
-fa_loose(args); // loose call
-// ie. instead of two arguments, there is only a single tuple argument
+fa_loose(args); 
+// ie. instead of two arguments, 
+// there is only a single tuple argument
 
-// another usage exaple
+// usage in mappings
 (0..10)
   .map(|_| (A, B))
   .map(fa_loose)
