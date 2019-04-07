@@ -125,6 +125,7 @@ pub fn loose(_attr: TokenStream, item: TokenStream) -> TokenStream {
     // such that the loosened has only one parameter, a tuple,
     // and flatten that tuple as parameters for the replica call
     let loosened = quote! {
+        #[inline(always)]
         #vis #constness #unsafety fn #ident_loose #generics ( #args_into_tuple ) #output {
             #ident(#(#pats),*)
         }

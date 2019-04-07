@@ -1,6 +1,6 @@
 [package]
 name = "loosen"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Thiago <swfsql@gmail.com>"]
 license = "MIT"
 description = "Derives a wrapper function which loosen the arguments into a tuple."
