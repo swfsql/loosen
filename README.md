@@ -6,24 +6,30 @@ Upon call, the loosened function propagates the call with the flattened input tu
 
 ## Example
 
-```
-#[loose] 
+```rust
+# extern crate loosen;
+# use loosen::loose;
+#
+# pub struct A;
+# pub struct B;
+# 
+#[loose]
 fn fa(a: A, b: B) {}
 
 // normal call
-fa(A, B); 
+fa(A, B);
 
 // loose call
 let args = (A, B);
-fa_loose(args); 
-// ie. instead of two arguments, 
+fa_loose(args);
+// ie. instead of two arguments,
 // there is only a single tuple argument
 
-// usage in mappings
+// another usage exaple
 (0..10)
-  .map(|_| (A, B))
-  .map(fa_loose)
-  .collect::<Vec<_>>();
+    .map(|_| (A, B))
+    .map(fa_loose)
+    .collect::<Vec<_>>();
 ```
 
 ## Note
